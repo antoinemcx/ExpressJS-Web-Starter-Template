@@ -1,0 +1,27 @@
+{
+  "name": "expressjs-web-template",
+  "version": "1.0.0",
+  "description": "ExpressJS complete template with migration management, administrator panel, authentication, etc.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "production": "node src/server.js production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoinemcx/ExpressJS-Web-Template.git"
+  },
+  "author": "antoinemcx",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-session": "^2.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mariadb": "^3.2.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}

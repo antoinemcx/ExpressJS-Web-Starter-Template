@@ -1,0 +1,20 @@
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+* { font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 18px }
+
+:root {
+    --background: #1A1A1D;
+    --text: #e4e4e4; --text-second: #4E4E50;
+    --scrollbar: #404046;
+}
+
+html { position: relative; }
+body {
+    position: absolute; height: 100%;
+    color: var(--text); box-sizing: border-box;
+    background: var(--background);
+}
+a { color: var(--main); text-decoration: none; }
+a:hover { color: var(--main-hover); text-decoration: none; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar) }
