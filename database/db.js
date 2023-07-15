@@ -1,5 +1,6 @@
 const mariadb = require('mariadb');
-const { db } = global.config;
+const environment = process.argv[2] || 'default';
+const { db } = require(`../config/${environment}`);
 
 const dbPool = mariadb.createPool({
     host: db.host,
