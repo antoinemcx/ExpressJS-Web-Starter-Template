@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-// const initializePassport = require('./middleware/passport-config');
+const initializePassport = require('./middleware/passport');
 
 console.clear();
 console.log('\n*\n')
@@ -19,7 +19,7 @@ const server = http.createServer(app);
 app.set('view engine', 'ejs');
 app.set('views', 'src/views');
 
-// initializePassport(passport);
+initializePassport(passport);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -37,7 +37,9 @@ app.use(express.static("src/public", { extensions:['pdf', 'jpg', 'jpeg', 'png', 
 console.log("\x1b[33m%s\x1b[0m", "(!) General routers loading...");
 
 const mainRoute = require('./routes/Main');
+const loginRoute = require('./routes/Login');
 app.use('/', mainRoute);
+app.use('/', loginRoute);
 
 app.get("*", (req, res) => { renderTemplate(res, req, 'error.ejs', { code: '404' }) });
 sleep(300);
