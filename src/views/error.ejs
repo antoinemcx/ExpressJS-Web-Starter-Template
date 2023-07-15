@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../components/meta') -%>
+        <title><%= code %> Error</title>
+
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+
+    <body>
+        <header><%- include('../components/header') -%></header>
+
+        <%
+            if(code === '404') {
+                message = "Page not found.";
+                subMessage = "The page you're looking for may have been moved, deleted or has never existed.";
+            } else if(code === '401') {
+                message = "Unauthorized.";
+                subMessage = "You must be logged in to access this page.";
+            } else if(code === '403') {
+                message = "Forbidden.";
+                subMessage = "You do not have access to this page.";
+            }
+        %>
+
+        <div class="container error-container">
+            <div>
+                <h1><%= code %></h1>
+                <h2><%= message || "Something went wrong" %></h2>
+                <p><%= subMessage || "An error has occured, maybe you did something wrong ?" %></p>
+
+                <a href="/" class="button button-full">Back to home</a>
+                <% if(code === '401') { %> <a href="/" class="button" style="margin-left: 10px;">Log in</a> <% } %>
+            </div>
+        </div>
+    </body>
+</html>

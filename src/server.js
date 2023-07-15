@@ -1,7 +1,7 @@
 const environment = process.argv[2] || 'default';
 global.config = require(`../config/${environment}`);
 const { connectToDB } = require('../database/db');
-const { sleep } = require('./utils/functions');
+const { sleep, renderTemplate } = require('./utils/functions');
 
 const http = require("http");
 const bodyParser = require("body-parser");
