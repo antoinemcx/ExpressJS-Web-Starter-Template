@@ -1,15 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/whitney-2');
-* { font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 18px }
+* { font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 17px }
 
 :root {
-    --background: #1A1A1D;
-    --text: #e4e4e4; --text-second: #4E4E50;
-    --scrollbar: #404046;
+    --background: #f1f1f7; --background-alt: #e9e9ef;
+    --background-second: #dbdde4; --scrollbar: #d1d3da;
+    --text: #272727; --text-hover: #757575; --text-second: #8d8d8d;
+    --main: #7161ef; --main-hover: #957fef;
 }
 
 html { position: relative; }
 body {
-    position: absolute; height: 100%;
+    position: absolute; margin: 0; padding: 10px;
+    height: 100%; width: 100%;
     color: var(--text); box-sizing: border-box;
     background: var(--background);
 }
@@ -18,3 +20,23 @@ a:hover { color: var(--main-hover); text-decoration: none; }
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-thumb { background: var(--scrollbar) }
+
+
+/* --- HEADER */
+header {
+    display: flex; justify-content: space-between; margin-bottom: 3rem;
+    align-items: center; padding: 15px 8%; background: var(--background);
+}
+header .logo { cursor: pointer; margin-right: 10px; padding-left: 0!important; }
+header .logo a { color: var(--main)!important; font-weight: bold; font-size: 25px!important; }
+header .logo a:hover { color: var(--main-hover)!important; }
+header .navbar { list-style: none; display: flex; }
+header .navbar li { padding: 0 30px; cursor: pointer; position: relative; align-self: center; }
+header .navbar li a { transition: all .2s ease 0s; font-size: 18px; color: var(--text); }
+header .navbar li a:hover { color: var(--text-hover); }
+
+header .button {
+    border: 2px solid var(--main); border-radius: 1rem;
+    padding: 8px 20px; color: var(--main);
+}
+header .button:hover { color: var(--main-hover); border-color: var(--main-hover); }

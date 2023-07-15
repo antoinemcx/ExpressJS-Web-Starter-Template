@@ -10,6 +10,10 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 // const initializePassport = require('./middleware/passport-config');
 
+console.clear();
+console.log('\n*\n')
+console.log(`\x1b[33mStarting the server (${environment})...\x1b[0m\n`);
+
 const app = express();
 const server = http.createServer(app);
 app.set('view engine', 'ejs');
@@ -30,8 +34,6 @@ app.use(express.static("src/public", { extensions:['pdf', 'jpg', 'jpeg', 'png', 
 
 
 // ROUTERS LOADING
-console.clear();
-console.log("\n*\n");
 console.log("\x1b[33m%s\x1b[0m", "(!) General routers loading...");
 
 const mainRoute = require('./routes/Main');
