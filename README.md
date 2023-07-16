@@ -6,7 +6,11 @@ If you like the project, feel free to put a ⭐ ; If you need help or anything, 
 * Ready to code
 * A complete file structure
 * MariaDB connection
-* Page template with header
+* Log in and sign in systems
+* Authentication system
+* Database migrations management
+* Page template with header   
+   
 
 ## Setup the project
 First, install the dependencies with `npm i`.  
@@ -28,5 +32,5 @@ $ npm run production
 For any errors found, please contact me [here](https://discord.gg/G6WQsMQShZ) for exemple or do a pull request.  
 This repository is licensed under the MIT License. See the `LICENSE` file ([here](https://github.com/antoinemcx/ExpressJS-Web-Template/blob/master/LICENSE)) for more information.
   
-
+  
 ###### Made with ❤️ by [antoinemcx](https://github.com/antoinemcx) in JavaScript & EJS.
