@@ -27,6 +27,6 @@ $ npm run production
 
 For any errors found, please contact me [here](https://discord.gg/G6WQsMQShZ) for exemple or do a pull request.  
 This repository is licensed under the MIT License. See the `LICENSE` file ([here](https://github.com/antoinemcx/ExpressJS-Web-Template/blob/master/LICENSE)) for more information.
-
+  
 
 ###### Made with ❤️ by [antoinemcx](https://github.com/antoinemcx) in JavaScript & EJS.
