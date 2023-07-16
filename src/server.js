@@ -29,9 +29,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(session({
-    secret: 'supersecreT',
+    secret: global.config.website.session_secret,
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
 }))
 app.use(passport.initialize())
 app.use(passport.session())
@@ -51,6 +51,7 @@ app.use('/', loginRoute);
 
 app.get("*", (req, res) => { renderTemplate(res, req, 'error.ejs', { code: '404' }) });
 sleep(300);
+
 
 connectToDB().then(() => {
     // SERVER LAUNCHING

@@ -6,7 +6,7 @@ module.exports = {
     
     website: {
         url: 'http://localhost:1234',
-        jwt_token: '',
+        session_secret: '',
     },
 
     db: {
