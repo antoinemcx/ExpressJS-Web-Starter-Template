@@ -1,7 +1,12 @@
 <ul class="navbar">
     <li class="logo"><a href="/">Logo</a></li>
     <li><a href="/">Home</a></li>
+    <li><a href="/test">Test</a></li>
 </ul>
 
 
-<a class="button" href="/login">Log in</a>
+<% if(user) { %>
+    <a class="button" href="/logout">Log out</a>
+<% } else { %>
+    <a class="button" href="/login">Log in</a>
+<% } %>

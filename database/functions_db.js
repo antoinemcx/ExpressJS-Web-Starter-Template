@@ -9,21 +9,10 @@ async function getUserByEmail(email) {
     });
 };
 
-async function getUserByUsername(username) {
-    return new Promise(async (resolve, reject) => {
-        try {
-            const rows = await global.db.query(`SELECT * FROM users WHERE username = ?`, [username]);
-            resolve(rows[0]);
-        } catch (error) {
-            reject(error);
-        }
-    });
-};
-
 async function getUserById(id) {
     return new Promise(async (resolve, reject) => {
         try {
-            const rows = await global.db.query('SELECT * FROM users WHERE id = ?', [id]);
+            const rows = await global.db.query(`SELECT * FROM users WHERE id = ?`, [id]);
             resolve(rows[0]);
         } catch (error) {
             reject(error);
@@ -31,4 +20,4 @@ async function getUserById(id) {
     });
 };
 
-module.exports = { getUserByEmail, getUserByUsername, getUserById }; 
+module.exports = { getUserByEmail, getUserById }; 

@@ -6,7 +6,7 @@ module.exports = {
     
     website: {
         url: 'http://localhost:1234',
-        cookieKey: '', //Random key for cookie-session
+        jwt_token: '',
     },
 
     db: {

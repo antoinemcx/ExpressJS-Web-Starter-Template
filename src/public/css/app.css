@@ -2,10 +2,10 @@
 * { font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 17px }
 
 :root {
-    --background: #f1f1f7; --background-alt: #e9e9ef;
+    --background: #f0f0f7; --background-alt: #ebebf0;
     --background-second: #dbdde4; --scrollbar: #d1d3da;
     --text: #272727; --text-hover: #757575; --text-second: #8d8d8d;
-    --main: #7161ef; --main-hover: #957fef;
+    --main: #7161ef; --main-hover: #957fef; --red: #dc3545;
 }
 
 html,body { height: 100%; width: 100% }
@@ -20,6 +20,8 @@ a:hover { color: var(--main-hover); text-decoration: none; }
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-thumb { background: var(--scrollbar) }
+
+.page-container { margin-top: 18vh; display: flex; justify-content: center; }
 
 
 /* --- HEADER */
@@ -37,7 +39,7 @@ header .navbar li a:hover { color: var(--text-hover); }
 
 /* -- BUTTONS */
 .button {
-    border: 2px solid var(--main); border-radius: 1rem;
+    border: 2px solid var(--main); border-radius: 1rem; cursor: pointer;
     padding: 8px 20px; color: var(--main); transition: all .2s ease;
 }
 .button:hover { color: var(--main-hover); border-color: var(--main-hover); }
@@ -46,7 +48,6 @@ header .navbar li a:hover { color: var(--text-hover); }
 
 
 /* --- ERROR PAGE */
-.error-container { margin-top: 18vh; display: flex; justify-content: center; }
 .error-container h1 { font-size: 80px; margin-top: 0; margin-bottom: 15px; }
 .error-container h2 { font-size: 50px; margin-bottom: 20px; margin-top: 0; }
 .error-container p { font-size: 20px; padding-bottom: 40px; padding-right: 30px; }

@@ -11,6 +11,7 @@
         <header><%- include('../components/header') -%></header>
 
         <%
+            let message, subMessage;
             if(code === '404') {
                 message = "Page not found.";
                 subMessage = "The page you're looking for may have been moved, deleted or has never existed.";
@@ -23,14 +24,14 @@
             }
         %>
 
-        <div class="container error-container">
+        <div class="container error-container page-container">
             <div>
                 <h1><%= code %></h1>
                 <h2><%= message || "Something went wrong" %></h2>
                 <p><%= subMessage || "An error has occured, maybe you did something wrong ?" %></p>
 
                 <a href="/" class="button button-full">Back to home</a>
-                <% if(code === '401') { %> <a href="/" class="button" style="margin-left: 10px;">Log in</a> <% } %>
+                <% if(code === '401') { %> <a href="/login" class="button" style="margin-left: 10px;">Log in</a> <% } %>
             </div>
         </div>
     </body>
