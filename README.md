@@ -9,7 +9,8 @@ If you like the project, feel free to put a ⭐ ; If you need help or anything, 
 * Log in and sign in systems
 * Authentication system
 * Database migrations management
-* Page template with header   
+* Page template with header
+* Custom error paging   
    
 
 ## Setup the project
