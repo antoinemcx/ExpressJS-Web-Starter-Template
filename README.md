@@ -1,6 +1,9 @@
-# ExpressJS-Web-Starter-Template
-A simple ExpressJS web server template with migration management and authentication of users by [antoinemcx](https://github.com/antoinemcx).   
-If you like the project, feel free to put a ⭐ ; If you need help or anything, join the [server support](https://discord.gg/G6WQsMQShZ).
+# ExpressJS-Web-Starter-Template [![Stars](https://img.shields.io/github/stars/antoinemcx/ExpressJS-Web-Starter-Template)](https://github.com/antoinemcx/ExpressJS-Web-Starter-Template) [![Support Server](https://img.shields.io/discord/738122381062832180.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/G6WQsMQShZ)
+
+<p align="center">
+   Simple ExpressJS web server template by [antoinemcx](https://github.com/antoinemcx).    
+   If you like the project, feel free to put a ⭐ ; If you need help or anything, join the [server support](https://discord.gg/G6WQsMQShZ).
+</p>
 
 # Features
 * Ready to code
