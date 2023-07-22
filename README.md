@@ -1,4 +1,4 @@
-# ExpressJS-Web-Template
+# ExpressJS-Web-Starter-Template
 A simple ExpressJS web server template with migration management and authentication of users by [antoinemcx](https://github.com/antoinemcx).   
 If you like the project, feel free to put a ⭐ ; If you need help or anything, join the [server support](https://discord.gg/G6WQsMQShZ).
 
